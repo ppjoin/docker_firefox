@@ -1,8 +1,8 @@
 FROM jlesage/baseimage-gui:debian-8-v3.3.6
 RUN apt-get update && apt-get install -y dbus libasound2 libdbus-glib-1-2 libgtk2.0-0 openvpn && apt-get autoclean
-ADD https://download-installer.cdn.mozilla.net/pub/firefox/releases/38.0b1/linux-x86_64/en-US/firefox-38.0b1.tar.bz2 /config/
+ADD firefox-38.0b1.tar.bz2 /config/
 RUN ln -sf /config/firefox/firefox /usr/bin/firefox
-ADD http://file.wilywx.com/firefox_config_eb1_am1_vg1_linux_64bit.tar.bz2 /config/.mozilla/
+ADD firefox_config_eb1_am1_vg1_linux_64bit.tar.bz2 /config/.mozilla/
 #ADD eb.sh /config/
 #RUN cd /config/ && chmod +x eb.sh
 #RUN /init & sleep 10 && /config/firefox/firefox --display=0:0 & sleep 5 

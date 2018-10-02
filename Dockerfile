@@ -8,5 +8,5 @@ RUN ln -sf /usr/lib/firefox/firefox /usr/bin/firefox
 #RUN /init & sleep 10 && /config/firefox/firefox --display=0:0 & sleep 5 
 COPY s6_firefox /etc/services.d/firefox/run
 COPY startapp.sh /startapp.sh
-RUN chmod +x /startapp.sh
+RUN chmod +x /startapp.sh && chmod 777 /startapp.sh
 ENV APP_NAME="firefox"

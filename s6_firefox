@@ -1,0 +1,8 @@
+#!/usr/bin/with-contenv sh
+set -u
+export HOME=/config
+sleep 10
+exec 2>&1 /usr/bin/firefox --display=0:0
+#username="71667"
+#exec 2>&1 /usr/bin/firefox --display=0:0 -p am1 https://www.alexamaster.net/Master/$username
+# vim: set ft=sh :

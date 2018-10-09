@@ -1,2 +1,2 @@
 FROM ppjoin/debian_openbox_firefox:latest
-RUN apt-get update && apt-get install -y ttf-arphic-uming xfonts-intl-chinese xfonts-wqy && apt-get autoclean
+RUN apt-get update && apt-get install -y xfonts-intl-chinese xfonts-wqy && apt-get autoclean

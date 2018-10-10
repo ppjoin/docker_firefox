@@ -1,2 +1,0 @@
-FROM ppjoin/debian_openbox_firefox:latest
-RUN apt-get update && apt-get install -y xfonts-intl-chinese xfonts-wqy && apt-get autoclean

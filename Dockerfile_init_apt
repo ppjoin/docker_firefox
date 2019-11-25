@@ -1,3 +1,3 @@
 FROM jlesage/baseimage-gui:debian-8-v3.3.6
-RUN apt-get update && apt-get install -y dbus libasound2 libdbus-glib-1-2 libgtk2.0-0 wmctrl && apt-get autoclean
+RUN apt-get update && apt-get install -y dbus libasound2 libdbus-glib-1-2 libgtk2.0-0 wget wmctrl && apt-get autoclean
 ENV APP_NAME="Init..." KEEP_APP_RUNNING=0
